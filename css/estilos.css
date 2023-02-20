@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid blue;
+}
+
+header{
+    background-color: darkslategray;
+    height: 80px;
+}
+
+#logo{
+    background-color: blueviolet;
+}
+
+nav{
+    background-color: turquoise;
+}
+
+main{
+    background-color: crimson;
+}
+
+section{
+    background-color: chartreuse;
+}
+
+article{
+    border-color: blue;
+}
+
+footer{
+    background-color: darkmagenta;
+    height: 100px;
+}
+
+#contenido{
+    height: 800px;
+}
