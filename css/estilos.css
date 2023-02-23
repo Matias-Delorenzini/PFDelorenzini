@@ -3,6 +3,51 @@ html, body {
     overflow-x: hidden;
 }
 
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* FUENTES y RESET */
+
+.reset{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.row{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+@font-face {
+    font-family: "DIN";
+    src: url("../fonts/DIN.ttf");
+}
+
+@font-face {
+    font-family: "DIN Bold";
+    src: url("../fonts/DIN-Bold.ttf");
+}
+
+@font-face {
+    font-family: "DIN Black";
+    src: url("../fonts/DIN-Black.ttf");
+}
+
+@font-face {
+    font-family: "DIN Medium";
+    src: url("../fonts/DIN-Medium.ttf");
+}
+
 @font-face {
     font-family: "Poppins SemiBold";
     src: url("../fonts/Poppins-SemiBold.ttf");
@@ -23,10 +68,6 @@ html, body {
     src: url("../fonts/Poppins-Regular.ttf");
 }
 
-@font-face{
-    font-family: "RopaSans Italic";
-    src: url("../fonts/RopaSans-Italic.ttf");
-}
 
 @font-face{
     font-family: "RopaSans";
@@ -34,10 +75,9 @@ html, body {
 }
 
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* ENCABEZADO */
+
 
 nav{
     font-family: "RopaSans";
@@ -60,12 +100,6 @@ a:hover {
     color: white;
 }
 
-.pagina-actual{
-    color: white;
-}
-
-
-
 header{
     background-color: rgb(0, 0, 0);
     height: 80px;
@@ -73,23 +107,25 @@ header{
     z-index: 10;
 }
 
-
-
-
-
-
-
-
-footer{
-    background-color: black;
-    height: 300px;
-}
-
-
-
 #logo{
     height: 80px;
     width: 80px;
+}
+
+#background-header{
+    height: 80px;
+}
+@media (max-width: 767px){
+    #background-header{
+        height: 110px;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* CONTENIDO de la PAGINA */
+
+.pagina-actual{
+    color: white;
 }
 
 #nuevo-modelo{
@@ -100,41 +136,16 @@ footer{
     padding: 0px;
 }
 
-#productos{
-    padding: 0px;
-}
-
-#contenido{
-    
-    
-}
-
-#coleccion{
-    background-color: #14213d;
-}
-
 #bisofly{
     height: 100%;
 }
 
-
-
-body{
-    background-image: url(../media/vibrante.png);
-    background-size: cover ;
-    background-attachment: fixed;
-}
-
-#background-header{
-    height: 80px;
-}
-@media (max-width: 768px){
-    #background-header{
-        height: 110px;
+@media (max-width: 424px){
+    #index-body{
+        background-color: black;
+        ;
     }
 }
-
-
 
 h2{
     font-family: "RopaSans";
@@ -150,6 +161,259 @@ p{
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+#productos{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+@media (max-width: 425px){
+    #productos{
+        background-image: url(../media/fondo-sm.png);
+        background-size: cover;
+        ;
+    }
+}
+@media (min-width: 426px) and (max-width: 768px){
+    #productos{
+        background-image: url(../media/fondo-md.png);
+        background-size: cover;
+        ;
+    }
+}
+@media (min-width: 769px){
+    #productos{
+        background-image: url(../media/fondo-lg.png);
+        background-size: cover;
+        ;
+    }
+}
+
+#h2-productos{
+    font-family: "DIN Bold";
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0px;
+    margin: 0px;
+    font-size: 3em;
+    margin: 20px;
+    padding: 5px;
+    text-align:center;
+}
+
+#enlace-shop{
+    font-family: "DIN Bold";
+    color: #fca311;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 2em;
+    margin: 20px;
+    padding: 5px;
+    text-align:center;
+}
+
+#coleccion{
+    background-color: #14213d;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding: 0px;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* FOOTER */
+
+footer{
+    background-color: rgb(20, 20, 20);
+}
+
+.text-footer{
+    color:bisque;
+    font-family:"RopaSans";
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: rgb(20, 20, 20);
+    margin-bottom: 10px;
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12px;
+    background-color: rgb(20, 20, 20);
+}
+
+#h2-footer{
+    padding: 0px;
+    margin-top: 30px;
+    background-color: rgb(20, 20, 20);
+}
+
+#descripcion-footer{
+    margin-bottom: 10px;
+}
+
+ul{
+    list-style:inside;
+}
+
+#help{
+    padding-left: 12px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* SHOP */
+
+#main-shop{
+    background-color: #ffffff;
+}
+
+.card{
+    font-family: "RopaSans";
+    background-color: #e5e5e5;
+    color: rgb(0, 0, 0);
+}
+
+.card-body{
+    box-shadow: 0px -20px 20px white;
+    z-index: 2;
+}
+
+.colores{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.dorado{
+    background-color: #D3A01F;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+.blanco{
+    background-color: #ffffff;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+.negro{
+    background-color: #000000;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+.carmesi{
+    background-color: #6F232E;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+.celeste{
+    background-color: aqua;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+.azul{
+    background-color: #0102FB;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+.rojo{
+    background-color: #FD030F;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+.violeta{
+    background-color: #420A45;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+.lavanda{
+    background-color: #765FAF;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+.gris{
+    background-color: #858991;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+.naranja{
+    background-color: #FD5713;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+.marron-lodo{
+    background-color: #93886E;
+    height: 30px;
+    width: 30px;
+    border: 2px solid #ffffff;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+.precio{
+    font-family: "DIN Bold";
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+#barra-de-busqueda-shop{
+    background-color: #14213d;
+    padding: 10px;
+}
+
+.dropdown-estilo{
+    font-family: "RopaSans";
+    background-color: #14213d;
+    color: white;
+}
+
+.dropdown-estilo-flex{
+    display: flex;
+    flex-direction: row;
+    color:white
 }
 
 
