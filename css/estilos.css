@@ -555,16 +555,10 @@ form{
     background-size: cover;
 }
 
-#h2-form{
+.text-form{
     color: #0D6EFD;
     text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
-
-#p-form{
-    color: #0D6EFD;
-    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
-}
-
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
