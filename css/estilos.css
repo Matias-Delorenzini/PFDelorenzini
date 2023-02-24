@@ -7,26 +7,6 @@ html, body {
 /* -------------------------------------------------------------------------------------------------------------------------------------*/
 /* FUENTES y RESET */
 
-.reset{
-    margin: 0px;
-    padding: 0px;
-}
-
-div.row{
-    margin: 0px;
-    padding: 0px;
-}
-
-div.container-fluid{
-    margin: 0px;
-    padding: 0px;
-}
-
-main{
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-}
 
 @font-face {
     font-family: "DIN";
@@ -94,15 +74,14 @@ a{
     text-decoration: none;
     font-size: 1.25em;
 }
-
 a:hover {
     font-weight: bold;
+    text-decoration: none;
     color: white;
 }
 
 header{
     background-color: rgb(0, 0, 0);
-    height: 80px;
     position: fixed;
     z-index: 10;
 }
@@ -112,13 +91,17 @@ header{
     width: 80px;
 }
 
-#background-header{
-    height: 80px;
+.main-separador{
+    width: 100%;
+    padding: 0px;
+    margin-top: 80px;
 }
-@media (max-width: 767px){
-    #background-header{
-        height: 110px;
+@media (max-width: 992px){
+    .main-separador{
+        margin-top: 105px;
+        
     }
+    
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------*/
@@ -193,7 +176,7 @@ p{
 }
 
 #h2-productos{
-    font-family: "DIN Bold";
+    font-family: "DIN Medium";
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0px;
@@ -205,7 +188,7 @@ p{
 }
 
 #enlace-shop{
-    font-family: "DIN Bold";
+    font-family: "DIN Medium";
     color: #fca311;
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 2em;
@@ -271,18 +254,23 @@ ul{
 /* -------------------------------------------------------------------------------------------------------------------------------------*/
 /* SHOP */
 
-#main-shop{
-    background-color: #ffffff;
-}
+
 
 .card{
     font-family: "RopaSans";
-    background-color: #e5e5e5;
-    color: rgb(0, 0, 0);
+    background-color: #14213d;
+    color: white;
+    border: 0px;
+    border-bottom: 10px solid #14213d;
+}
+.card:hover{
+    background-color: #1d315a;
+    border-bottom: 10px solid #1d315a;
 }
 
+
 .card-body{
-    box-shadow: 0px -20px 20px white;
+    box-shadow: 0px -20px 20px #ffffff;
     z-index: 2;
 }
 
@@ -388,13 +376,14 @@ ul{
     margin-right: 10px;
 }
 
-
-
-
-
+#shop-logo{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
 
 .precio{
-    font-family: "DIN Bold";
+    font-family: "RopaSans";
     padding-top: 10px;
     font-size: 1em;
 }
@@ -402,18 +391,105 @@ ul{
 #barra-de-busqueda-shop{
     background-color: #14213d;
     padding: 10px;
+    display: flex;
+}
+
+.barra-busqueda{
+    margin-left: auto;
+}
+
+.dropdown{
+    margin-right: 10px;
 }
 
 .dropdown-estilo{
     font-family: "RopaSans";
     background-color: #14213d;
     color: white;
+    border: 1px solid rgb(138, 138, 138);
 }
 
 .dropdown-estilo-flex{
     display: flex;
     flex-direction: row;
-    color:white
+    color:white;
 }
 
+.form-control{
+    font-family: "RopaSans";
+    color: white;
+    width: 100%;
+    background-color: #14213d;
+}
+
+#form1{
+    font-family: "RopaSans";
+    color: white;
+    width: 100%;
+    background-color: #14213d;
+}
+
+.links-shop{
+    font-size: 20px;
+}
+
+div.row{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+main{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+
+.reset{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* ABOUT US */
+
+.main-about-us{
+    background-color: #14213d;
+}
+
+.about-storage{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    padding: 0px;
+}
+
+#parrafo-about-us{
+    padding: 50px;
+    font-size: 1.6em;
+}
+
+.h2-about-us{
+    padding-bottom: 30px;
+    padding-left: 50px;
+    font-size: 2.5em;
+}
+
+#formulario-pagina{
+    background-color: #14213d;
+    padding-left: 50px;
+    font-family: "Ropasans";
+}
+
+input{
+    width:100px;
+}
+
+input{
+    background-color: #14213d;
+    border: 1px solid white;
+    border-radius: 2px;
+}
 
