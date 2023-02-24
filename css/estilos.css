@@ -1,6 +1,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    background-color: #141414;
 }
 
 
@@ -187,6 +188,10 @@ p{
     text-align:center;
 }
 
+#main-shop{
+    background-color: #14213d;
+}
+
 #enlace-shop{
     font-family: "DIN Medium";
     color: #fca311;
@@ -233,7 +238,7 @@ footer{
     background-color: rgb(20, 20, 20);
 }
 
-#h2-footer{
+.h2-footer{
     padding: 0px;
     margin-top: 30px;
     background-color: rgb(20, 20, 20);
@@ -270,7 +275,7 @@ ul{
 
 
 .card-body{
-    box-shadow: 0px -20px 20px #ffffff;
+    box-shadow: 0px -20px 20px #1d315a;
     z-index: 2;
 }
 
@@ -477,19 +482,139 @@ main{
     font-size: 2.5em;
 }
 
-#formulario-pagina{
-    background-color: #14213d;
-    padding-left: 50px;
-    font-family: "Ropasans";
-}
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* PROGRAM */
 
 input{
     width:100px;
 }
 
 input{
-    background-color: #14213d;
+    background-color: rgb(12, 12, 12);
     border: 1px solid white;
     border-radius: 2px;
+    width: 120px;
+}
+
+.form-estilo{
+    background-color: rgb(12, 12, 12);
+    border-radius: 2px;
+    width: 120px;
+    color: grey;
+}
+
+label{
+    color: grey;
+}
+
+#submit{
+    background-color: rgb(12, 12, 12);
+    border-radius: 2px;
+    color: grey;
+    width: 120px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+#date{
+    margin-bottom: 5px;
+}
+
+#formulario-pagina{
+    font-family: "Ropasans";
+    background-color: #14213d;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 140px;
+}
+@media (max-width: 992px){
+    #formulario-pagina{
+        padding-right: 20px;
+        padding-left: 20px;
+        
+    }
+    
+}
+
+form{
+
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: "RopaSans";
+    background-color: rgb(12, 12, 12)  ;
+}
+
+#programa-texto{
+    background-image: url(../media/court.png);
+    border-radius: 10px 10px 0px 0px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#h2-form{
+    color: #0D6EFD;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+#p-form{
+    color: #0D6EFD;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* FIND US */
+
+.main-find-us{
+    background-image: url(../media/fondo3.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.h2-find-us{
+    color: #fca311;
+    padding: 0px;
+    margin: 0px;
+    background-color: #111111;
+    padding: 5px;
+    width: 600px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+
+
+.main-find-us{
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+}
+
+.p-find-us{
+    color: white;
+    text-shadow: 1px 1px 2px grey, 0 0 1em grey, 0 0 0.2em grey;
+    font-size: 2em;
+}
+
+
+.resaltado{
+    color: #fca311;
+    text-shadow: 1px 1px 2px #ad700d, 0 0 1em #ad700d, 0 0 0.2em #ad700d;
 }
 
