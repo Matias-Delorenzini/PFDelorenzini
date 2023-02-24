@@ -530,6 +530,11 @@ input[type=number] {
 /* -------------------------------------------------------------------------------------------------------------------------------------*/
 /* FIND US */
 
+#mapa{
+    background-color: #292929;
+}
+
+
 .main-find-us{
     background-image: url(../media/fondo3.png);
     background-size: cover;
