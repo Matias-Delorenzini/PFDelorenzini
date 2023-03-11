@@ -1,0 +1,569 @@
+@import "colores-y-fuentes";
+@import "mixins";
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: $negro-14
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* ENCABEZADO */
+
+
+
+
+header{
+    background-color: $negro;
+    position: fixed;
+    z-index: 10;
+
+    #logo{
+        height: 80px;
+        width: 80px;
+    }
+
+    nav{
+        font-family: $ropasans;
+        color: $blanco;
+        align-items: center;
+        background-color: $negro;
+
+        @include flex-row-center-space-around ;
+            .pagina-actual{
+                color: $blanco
+            }
+    }
+
+    a{
+        @include a-texto;
+
+        &:hover{
+            font-weight: bold;
+            text-decoration: none;
+            color: $blanco
+        }
+    }
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* CONTENIDO de la PAGINA */
+
+main{
+    @include reset;
+}
+
+.main-separador{
+    width: 100%;
+    padding: 0px;
+    margin-top: 80px;
+}
+@media (max-width: 992px){
+    .main-separador{
+        margin-top: 105px;
+    }
+    
+}
+
+#nuevo-modelo{
+    background-color: $navy-oscuro;
+    @include flex-column-start;
+    padding: 0px;
+}
+
+#bisofly{
+    height: 100%;
+}
+
+@media (max-width: 424px){
+    #index-body{
+        background-color: $negro;
+        ;
+    }
+}
+
+h2{
+    font-family: $ropasans;
+    color: $naranja;
+    padding: 20px;
+    padding-bottom: 0px;
+    font-size: 1.5em;
+}
+
+p{
+    font-family: $ropasans;
+    color: $blanco;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#productos{
+    padding: 0px;
+    display: flex;
+    @include flex-column-center;
+}
+@media (max-width: 425px){
+    #productos{
+        background-image: url(../media/fondo-sm.png);
+        background-size: cover;
+        ;
+    }
+}
+@media (min-width: 426px) and (max-width: 768px){
+    #productos{
+        background-image: url(../media/fondo-md.png);
+        background-size: cover;
+        ;
+    }
+}
+@media (min-width: 769px){
+    #productos{
+        background-image: url(../media/fondo-lg.png);
+        background-size: cover;
+        ;
+    }
+}
+
+#h1-productos{
+    font-family: $din-medium;
+    color: $blanco;
+    background-color: $negro05;
+    @include reset;
+    font-size: 3em;
+    margin: 20px;
+    padding: 5px;
+        
+}
+
+#main-shop{
+    background-color: $navy;
+}
+
+
+#enlace-shop{
+    font-family: $din-medium;
+    color: $naranja;
+    background-color: $negro05;
+    font-size: 2em;
+    margin: 20px;
+    padding: 5px;
+    text-align:center;
+
+        animation-name: linkanim;
+        animation-duration: 3000ms;
+        animation-iteration-count:infinite;
+        animation-fill-mode:both;
+}
+
+
+#coleccion{
+    background-color:$navy-oscuro;
+    @include flex-column-start;
+    @include reset;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* FOOTER */
+
+footer{
+    background-color: $negro-20;
+
+    .text-footer{
+        color: $bisque;
+        font-family: $ropasans;
+        background-color: $negro-20;
+        @include reset;
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .footer-flex{
+        @include flex-row-space-between;
+        margin: 12px;
+        background-color: $negro-20;
+    }
+
+    .h2-footer{
+        padding: 0px;
+        margin-top: 30px;
+        background-color: $negro-20;
+    }
+
+    #descripcion-footer{
+        margin-bottom: 10px;
+    }
+
+    ul{
+        list-style:inside;
+    }
+
+    #help{
+        padding-left: 12px;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* SHOP */
+
+.col-shop:hover{
+    .card-body{
+        animation-name: cardshop;
+        animation-duration: 500ms;
+        animation-iteration-count:1;
+        animation-fill-mode:forwards;
+    }
+}
+
+.card{
+    font-family: $ropasans;
+    background-color: $navy-oscuro;
+    color: $blanco;
+    border: 0px;
+    margin-bottom: 20px;
+
+        
+    
+    
+}
+
+.card-body{
+    box-shadow: 0px -20px 20px $navy;
+    z-index: 2;    
+    height: 80px;
+    overflow: hidden;
+
+        .colores{
+            display: flex;
+            flex-direction: row;
+            padding-top: 7px;
+        
+
+        .dorado{
+            background-color: $dorado;
+            height: 30px;
+            width: 30px;
+            border: 2px solid $blanco;
+            margin-right: 10px;
+        }
+
+        .blanco{
+            @extend .dorado;
+            background-color: $blanco;
+        }
+
+        .negro{
+            @extend .dorado;
+            background-color: $negro;
+        }
+
+        .carmesi{
+            @extend .dorado;
+            background-color: $carmesi;
+        }
+
+        .celeste{
+            @extend .dorado;
+            background-color: $celeste;
+        }
+
+        .azul{
+            @extend .dorado;
+            background-color: $azul;  
+        }
+
+        .rojo{
+            @extend .dorado;
+            background-color: $rojo;
+        }
+
+        .violeta{
+            @extend .dorado;
+            background-color: $violeta;
+        }
+
+        .lavanda{
+            @extend .dorado;
+            background-color: $lavanda;
+        }
+
+        .gris{
+            @extend .dorado;
+            background-color: $gris;
+        }
+
+        .naranja{
+            @extend .dorado;
+            background-color: $mandarina;
+        }
+
+        .marron-lodo{
+            @extend .dorado;
+            background-color: $lodo;
+        }
+
+        .card-title{
+            font-size: 1.2em;
+        }
+
+        .precio{
+            font-family: $ropasans;
+            font-size: 1.2em;
+        }
+    }
+        
+}
+
+
+#shop-logo{
+    @include reset;
+}
+
+
+
+#barra-de-busqueda-shop{
+    background-color: $navy-oscuro;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 20px;
+
+    .form-control{
+        font-family: $ropasans;
+        color: $blanco;
+        width: 100%;
+        background-color: $navy-oscuro
+    }
+}
+
+.barra-busqueda{
+    margin-left: auto;
+}
+
+.dropdown{
+    @include a-texto;
+    .dropdown-estilo{
+        font-family: $ropasans;
+        background-color: $navy-oscuro;
+        color: $blanco;
+        text-decoration: none;
+    }
+    .dropdown-estilo-flex{
+        display: flex;
+        flex-direction: row;
+        color:$blanco;
+    }
+}
+
+.links-shop{
+    font-size: 20px;
+}
+
+div.row{
+    @include reset;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* ABOUT US */
+
+.main-about-us{
+    background-color: $navy-oscuro;
+
+    .about-storage{
+        @include flex-column-start;
+        padding: 0px;
+
+        #parrafo-about-us{
+            padding: 50px;
+            font-size: 1.6em;
+        }
+
+        .h2-about-us{
+            padding-bottom: 30px;
+            padding-left: 50px;
+            font-size: 2.5em;
+        }
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* PROGRAM */
+
+#formulario-pagina{
+    font-family: $ropasans;
+    background-color: $navy-oscuro;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 140px;
+
+        @media (max-width: 426px){
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+
+        #programa-texto{
+            background-image: url(../media/court.png);
+            border-radius: 10px 10px 0px 0px;
+            background-attachment: fixed;
+            background-size: cover;
+        
+        .text-form{
+            color: $azul-tenue;
+            text-shadow: 1px 1px 2px $negro, 0 0 1em $negro, 0 0 0.2em $negro;
+        }
+    }
+
+    form{
+
+        border-radius: 0px 0px 10px 10px;
+        padding-left: 10px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        color: $blanco;
+        font-family: $ropasans;
+        background-color: $negro-12  ;
+
+            .form-estilo{
+                background-color: $negro-12;
+                border-radius: 2px;
+                width: 120px;
+                color: $gris;
+
+                    input{
+                        width:100px;
+                        background-color: $negro-12;
+                        border: 1px solid $blanco;
+                        border-radius: 2px;
+                        width: 120px;
+                            @media (max-width: 426px){
+                            width: 200px
+                                
+                        }
+
+                        &:hover{
+                            animation-name: hoveranim;
+                            animation-duration: 500ms;
+                            animation-iteration-count:1;
+                            animation-fill-mode: forwards;
+                        }
+
+                        &:focus{
+                            animation-name: formanim;
+                            animation-duration: 1000ms;
+                            animation-iteration-count:infinite;
+                            animation-fill-mode:both;
+                    }
+                    }
+
+                    
+                    #date{
+                        margin-bottom: 5px;
+                    }
+
+                    @media (max-width: 992px){
+                        #formulario-pagina{
+                            padding-right: 20px;
+                            padding-left: 20px;
+
+                        }
+
+                    }
+
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+
+                    /* Firefox */
+                    input[type=number] {
+                        -moz-appearance: textfield;
+                    }
+                
+        }
+
+        #submit{
+            background-color: $negro-12;
+            border-radius: 2px;
+            color: $gris;
+            width: 120px;
+            margin-left: 15px;
+            margin-top: 20px;
+        }
+        
+    }
+
+    
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* FIND US */
+
+#mapa{
+    background-color: $gris-oscuro;
+    width: 100%;
+    height: 300px;
+}
+
+
+.main-find-us{
+    background-image: url(../media/fondo3.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+
+            @media (max-width: 992px){
+                @include reset;
+                padding-top: 150px;
+                }
+
+        .h2-find-us{
+            color: $naranja;
+            padding: 0px;
+            margin: 0px;
+            background-color: $negro-12;
+            padding: 5px;
+            border-radius: 5px 5px 0px 0px;
+        }
+        .p-find-us{
+            color: $blanco;
+            text-shadow: 1px 1px 2px $gris, 0 0 1em $gris, 0 0 0.2em $gris;
+            font-size: 2em;
+
+                .resaltado{
+                    color: $naranja;
+                    text-shadow: 1px 1px    2px $dorado, 0 0 1em   $dorado, 0 0 0.2em    $dorado;
+                }
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+

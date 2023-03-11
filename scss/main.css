@@ -1,0 +1,462 @@
+@import url("./_colores.scss");
+@import url("./_fuentes.scss");
+@font-face {
+  font-family: "DIN Medium";
+  src: url("../fonts/DIN-Medium.ttf");
+}
+@font-face {
+  font-family: "RopaSans";
+  src: url("../fonts/RopaSans-Regular.ttf");
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: rgb(14, 14, 14);
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* ENCABEZADO */
+header {
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  z-index: 10;
+}
+header #logo {
+  height: 80px;
+  width: 80px;
+}
+header nav {
+  font-family: "RopaSans";
+  color: rgb(255, 255, 255);
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+header a {
+  color: rgb(133, 137, 145);
+  text-decoration: none;
+  font-size: 1.25em;
+}
+header a:hover {
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+header a .pagina-actual {
+  color: rgb(255, 255, 255);
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* CONTENIDO de la PAGINA */
+main {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.main-separador {
+  width: 100%;
+  padding: 0px;
+  margin-top: 80px;
+}
+
+@media (max-width: 992px) {
+  .main-separador {
+    margin-top: 105px;
+  }
+}
+#nuevo-modelo {
+  background-color: rgb(20, 33, 61);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px;
+}
+
+#bisofly {
+  height: 100%;
+}
+
+@media (max-width: 424px) {
+  #index-body {
+    background-color: rgb(0, 0, 0);
+  }
+}
+h2 {
+  font-family: "RopaSans";
+  color: rgb(253, 163, 18);
+  padding: 20px;
+  padding-bottom: 0px;
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "RopaSans";
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#productos {
+  padding: 0px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 425px) {
+  #productos {
+    background-image: url(../media/fondo-sm.png);
+    background-size: cover;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  #productos {
+    background-image: url(../media/fondo-md.png);
+    background-size: cover;
+  }
+}
+@media (min-width: 769px) {
+  #productos {
+    background-image: url(../media/fondo-lg.png);
+    background-size: cover;
+  }
+}
+#h2-productos {
+  font-family: "DIN Medium";
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 3em;
+  margin: 20px;
+  padding: 5px;
+}
+
+#main-shop {
+  background-color: rgb(29, 49, 90);
+}
+
+#enlace-shop {
+  font-family: "DIN Medium";
+  color: rgb(253, 163, 18);
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  margin: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+#coleccion {
+  background-color: rgb(20, 33, 61);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* FOOTER */
+footer {
+  background-color: rgb(20, 20, 20);
+}
+footer .text-footer {
+  color: rgb(255, 228, 196);
+  font-family: "RopaSans";
+  background-color: rgb(20, 20, 20);
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+footer .footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 12px;
+  background-color: rgb(20, 20, 20);
+}
+footer .h2-footer {
+  padding: 0px;
+  margin-top: 30px;
+  background-color: rgb(20, 20, 20);
+}
+footer #descripcion-footer {
+  margin-bottom: 10px;
+}
+footer ul {
+  list-style: inside;
+}
+footer #help {
+  padding-left: 12px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* SHOP */
+.card {
+  font-family: "RopaSans";
+  background-color: rgb(20, 33, 61);
+  color: rgb(255, 255, 255);
+  border: 0px;
+  margin-bottom: 20px;
+}
+.card.card:hover {
+  background-color: rgb(56, 96, 175);
+}
+
+.card-body {
+  box-shadow: 0px -20px 20px rgb(29, 49, 90);
+  z-index: 2;
+}
+
+.colores {
+  display: flex;
+  flex-direction: row;
+}
+
+.dorado, .marron-lodo, .naranja, .gris, .lavanda, .violeta, .rojo, .azul, .celeste, .carmesi, .negro, .blanco {
+  background-color: rgb(211, 160, 31);
+  height: 30px;
+  width: 30px;
+  border: 2px solid rgb(255, 255, 255);
+  margin-right: 10px;
+}
+
+.blanco {
+  background-color: rgb(255, 255, 255);
+}
+
+.negro {
+  background-color: rgb(0, 0, 0);
+}
+
+.carmesi {
+  background-color: rgb(111, 35, 46);
+}
+
+.celeste {
+  background-color: rgb(0, 255, 255);
+}
+
+.azul {
+  background-color: rgb(1, 2, 251);
+}
+
+.rojo {
+  background-color: rgb(253, 3, 15);
+}
+
+.violeta {
+  background-color: rgb(66, 10, 69);
+}
+
+.lavanda {
+  background-color: rgb(118, 95, 175);
+}
+
+.gris {
+  background-color: rgb(133, 137, 145);
+}
+
+.naranja {
+  background-color: rgb(253, 87, 19);
+}
+
+.marron-lodo {
+  background-color: rgb(147, 136, 110);
+}
+
+#shop-logo {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.precio {
+  font-family: "RopaSans";
+  padding-top: 10px;
+  font-size: 1em;
+}
+
+#barra-de-busqueda-shop {
+  background-color: rgb(20, 33, 61);
+  padding: 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+#barra-de-busqueda-shop .form-control {
+  font-family: "RopaSans";
+  color: rgb(255, 255, 255);
+  width: 100%;
+  background-color: rgb(20, 33, 61);
+}
+
+.barra-busqueda {
+  margin-left: auto;
+}
+
+.dropdown {
+  color: rgb(133, 137, 145);
+  text-decoration: none;
+  font-size: 1.25em;
+}
+.dropdown .dropdown-estilo {
+  font-family: "RopaSans";
+  background-color: rgb(20, 33, 61);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.dropdown .dropdown-estilo-flex {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+}
+
+.links-shop {
+  font-size: 20px;
+}
+
+div.row {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* ABOUT US */
+.main-about-us {
+  background-color: rgb(20, 33, 61);
+}
+.main-about-us .about-storage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px;
+}
+.main-about-us .about-storage #parrafo-about-us {
+  padding: 50px;
+  font-size: 1.6em;
+}
+.main-about-us .about-storage .h2-about-us {
+  padding-bottom: 30px;
+  padding-left: 50px;
+  font-size: 2.5em;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* PROGRAM */
+#formulario-pagina {
+  font-family: "RopaSans";
+  background-color: rgb(20, 33, 61);
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 140px;
+}
+#formulario-pagina #programa-texto {
+  background-image: url(../media/court.png);
+  border-radius: 10px 10px 0px 0px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#formulario-pagina #programa-texto .text-form {
+  color: rgb(13, 110, 253);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+}
+#formulario-pagina form {
+  border-radius: 0px 0px 10px 10px;
+  padding-left: 10px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: rgb(255, 255, 255);
+  font-family: "RopaSans";
+  background-color: rgb(12, 12, 12);
+}
+#formulario-pagina form .form-estilo {
+  background-color: rgb(12, 12, 12);
+  border-radius: 2px;
+  width: 120px;
+  color: rgb(133, 137, 145);
+  /* Firefox */
+}
+#formulario-pagina form .form-estilo input {
+  width: 100px;
+}
+#formulario-pagina form .form-estilo input {
+  background-color: rgb(12, 12, 12);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  width: 120px;
+}
+#formulario-pagina form .form-estilo label {
+  color: rgb(133, 137, 145);
+}
+#formulario-pagina form .form-estilo #date {
+  margin-bottom: 5px;
+}
+@media (max-width: 992px) {
+  #formulario-pagina form .form-estilo #formulario-pagina {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+#formulario-pagina form .form-estilo input::-webkit-outer-spin-button,
+#formulario-pagina form .form-estilo input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#formulario-pagina form .form-estilo input[type=number] {
+  -moz-appearance: textfield;
+}
+#formulario-pagina form #submit {
+  background-color: rgb(12, 12, 12);
+  border-radius: 2px;
+  color: rgb(133, 137, 145);
+  width: 120px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* FIND US */
+#mapa {
+  background-color: rgb(41, 41, 41);
+}
+
+.main-find-us {
+  background-image: url(../media/fondo3.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 80px;
+}
+.main-find-us .h2-find-us {
+  color: rgb(253, 163, 18);
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(12, 12, 12);
+  padding: 5px;
+  width: 600px;
+  border-radius: 5px 5px 0px 0px;
+}
+.main-find-us .p-find-us {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgb(133, 137, 145), 0 0 1em rgb(133, 137, 145), 0 0 0.2em rgb(133, 137, 145);
+  font-size: 2em;
+}
+.main-find-us .p-find-us .resaltado {
+  color: rgb(253, 163, 18);
+  text-shadow: 1px 1px 2px rgb(211, 160, 31), 0 0 1em rgb(211, 160, 31), 0 0 0.2em rgb(211, 160, 31);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,83 @@
+@import url("./_colores.scss");
+@import url("./_fuentes.scss");
+
+@mixin reset {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
+@mixin flex-row-space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin a-texto {
+    color: $gris;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+@mixin nav-texto {
+    font-family: $ropasans;
+    color: $blanco;
+}
+
+@mixin flex-column-start {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+
+@mixin flex-column-space-around {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@mixin flex-row-center-space-around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes cardshop{
+    0% {background-color: $navy;} 
+    33% {background-color: $navy-claro;} 
+    100% {background-color: $navy-oscuro;
+    height: 125px;} 
+}
+
+@keyframes linkanim{
+    0% {color: $naranja;}
+    50% {color: $gris;}
+    100% {color: $naranja;}
+}
+
+@keyframes formanim{
+    0% {background-color: $negro-12;}
+    50% {background-color: $blanco;}
+    100% {background-color: $negro-12;}
+}
+
+@keyframes labelanim{
+    0% {color: $gris;}
+    50% {color:$blanco;}
+    100% {color: $gris;}
+}
+
+
+@keyframes hoveranim{
+    0% {background-color: $negro-12;}
+    100% {background-color: $blanco;}
+}
