@@ -419,8 +419,17 @@ div.row{
             background-attachment: fixed;
             background-size: cover;
         
+        .h1-form{
+            color: $azul-tenue;
+            font-size: 1.5em;
+            padding-left: 20px;
+            text-shadow: 1px 1px 2px $negro, 0 0 1em $negro, 0 0 0.2em $negro;
+        }
+
         .text-form{
             color: $azul-tenue;
+            padding-left: 20px;
+            font-size: 1em;
             text-shadow: 1px 1px 2px $negro, 0 0 1em $negro, 0 0 0.2em $negro;
         }
     }
@@ -536,7 +545,12 @@ div.row{
                 padding-top: 150px;
                 }
 
-        .h2-find-us{
+        .h1-find-us{
+            font-family: $ropasans;
+            color: $naranja;
+            padding: 20px;
+            padding-bottom: 0px;
+            font-size: 1.5em;
             color: $naranja;
             padding: 0px;
             margin: 0px;

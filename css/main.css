@@ -428,8 +428,16 @@ div.row {
   background-attachment: fixed;
   background-size: cover;
 }
+#formulario-pagina #programa-texto .h1-form {
+  color: rgb(13, 110, 253);
+  font-size: 1.5em;
+  padding-left: 20px;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
+}
 #formulario-pagina #programa-texto .text-form {
   color: rgb(13, 110, 253);
+  padding-left: 20px;
+  font-size: 1em;
   text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 #formulario-pagina form {
@@ -523,7 +531,12 @@ div.row {
     padding-top: 150px;
   }
 }
-.main-find-us .h2-find-us {
+.main-find-us .h1-find-us {
+  font-family: "RopaSans";
+  color: rgb(253, 163, 18);
+  padding: 20px;
+  padding-bottom: 0px;
+  font-size: 1.5em;
   color: rgb(253, 163, 18);
   padding: 0px;
   margin: 0px;
