@@ -233,7 +233,7 @@ footer{
 .card-body{
     box-shadow: 0px -20px 20px $navy;
     z-index: 2;    
-    height: 80px;
+    height: 65px;
     overflow: hidden;
 
         .colores{
@@ -304,17 +304,16 @@ footer{
             @extend .dorado;
             background-color: $lodo;
         }
+    }
 
         .card-title{
             font-size: 1.2em;
-        }
+    }
 
         .precio{
             font-family: $ropasans;
-            font-size: 5000px;
-        }
-    }
-        
+            font-size: 1.2em;
+        }   
 }
 
 
@@ -431,7 +430,6 @@ div.row{
     }
 
     form{
-
         border-radius: 0px 0px 10px 10px;
         padding-left: 10px;
         padding-top: 30px;

@@ -278,7 +278,7 @@ footer #help {
 .card-body {
   box-shadow: 0px -20px 20px rgb(29, 49, 90);
   z-index: 2;
-  height: 80px;
+  height: 65px;
   overflow: hidden;
 }
 .card-body .colores {
@@ -326,10 +326,10 @@ footer #help {
 .card-body .colores .marron-lodo {
   background-color: rgb(147, 136, 110);
 }
-.card-body .colores .card-title {
+.card-body .card-title {
   font-size: 1.2em;
 }
-.card-body .colores .precio {
+.card-body .precio {
   font-family: "RopaSans";
   font-size: 1.2em;
 }
