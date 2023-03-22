@@ -38,17 +38,16 @@ header{
             }
     }
 
-    a{
-        @include a-texto;
-
         &:hover{
             font-weight: bold;
             text-decoration: none;
             color: $blanco
-        }
     }
 }
 
+a{
+    @include a-texto;
+}
 
 
 /* -------------------------------------------------------------------------------------------------------------------------------------*/
@@ -234,6 +233,7 @@ footer{
     box-shadow: 0px -20px 20px $navy;
     z-index: 2;    
     height: 65px;
+    padding: 10px;
     overflow: hidden;
 
         .colores{
@@ -307,12 +307,12 @@ footer{
     }
 
         .card-title{
-            font-size: 1.2em;
+            font-size: 1em;
     }
 
         .precio{
             font-family: $ropasans;
-            font-size: 1.2em;
+            font-size: 1    em;
         }   
 }
 
@@ -339,11 +339,15 @@ footer{
 
 .barra-busqueda{
     margin-left: auto;
+    & ::placeholder{
+        color: $gris;
+    }
 }
 
 .dropdown{
     @include a-texto;
     .dropdown-estilo{
+        border-color: $invisible;
         font-family: $ropasans;
         background-color: $navy-oscuro;
         color: $blanco;
@@ -400,15 +404,10 @@ div.row{
 #formulario-pagina{
     font-family: $ropasans;
     background-color: $navy-oscuro;
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-right: 50px;
-    padding-bottom: 140px;
+    padding: 15px;
 
         @media (max-width: 426px){
-            padding-left: 10px;
-            padding-top: 10px;
-            padding-right: 10px;
+            padding: 10px
         }
 
         #programa-texto{
@@ -420,13 +419,14 @@ div.row{
         .h1-form{
             color: $azul-tenue;
             font-size: 1.5em;
-            padding-left: 20px;
+            padding-top: 10px;
             text-shadow: 1px 1px 2px $negro, 0 0 1em $negro, 0 0 0.2em $negro;
         }
 
         .text-form{
             color: $azul-tenue;
-            padding-left: 20px;
+            margin: 0px;
+            padding: 0px;
             font-size: 1em;
             text-shadow: 1px 1px 2px $negro, 0 0 1em $negro, 0 0 0.2em $negro;
         }
@@ -434,9 +434,7 @@ div.row{
 
     form{
         border-radius: 0px 0px 10px 10px;
-        padding-left: 10px;
-        padding-top: 30px;
-        padding-bottom: 10px;
+        padding: 12px;
         color: $blanco;
         font-family: $ropasans;
         background-color: $negro-12  ;
@@ -444,15 +442,20 @@ div.row{
             .form-estilo{
                 background-color: $negro-12;
                 border-radius: 2px;
-                width: 120px;
+                margin-bottom: 10px;
                 color: $gris;
+                width: 130px;
+                    @media (max-width: 426px){
+                    width: 200px
+                }
 
                     input{
                         width:100px;
                         background-color: $negro-12;
                         border: 1px solid $blanco;
                         border-radius: 2px;
-                        width: 120px;
+                        width: 130px;
+                        padding: 6px 12px;
                             @media (max-width: 426px){
                             width: 200px
                                 
@@ -504,7 +507,7 @@ div.row{
             background-color: $negro-12;
             border-radius: 2px;
             color: $gris;
-            width: 120px;
+            width: 130px;
             margin-left: 15px;
             margin-top: 20px;
         }

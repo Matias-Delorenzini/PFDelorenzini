@@ -91,15 +91,16 @@ header nav {
 header nav .pagina-actual {
   color: rgb(255, 255, 255);
 }
-header a {
-  color: rgb(133, 137, 145);
-  text-decoration: none;
-  font-size: 1.25em;
-}
-header a:hover {
+header:hover {
   font-weight: bold;
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+
+a {
+  color: rgb(133, 137, 145);
+  text-decoration: none;
+  font-size: 1.25em;
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------*/
@@ -279,6 +280,7 @@ footer #help {
   box-shadow: 0px -20px 20px rgb(29, 49, 90);
   z-index: 2;
   height: 65px;
+  padding: 10px;
   overflow: hidden;
 }
 .card-body .colores {
@@ -327,11 +329,11 @@ footer #help {
   background-color: rgb(147, 136, 110);
 }
 .card-body .card-title {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .card-body .precio {
   font-family: "RopaSans";
-  font-size: 1.2em;
+  font-size: 1 em;
 }
 
 #shop-logo {
@@ -356,6 +358,9 @@ footer #help {
 .barra-busqueda {
   margin-left: auto;
 }
+.barra-busqueda ::placeholder {
+  color: rgb(133, 137, 145);
+}
 
 .dropdown {
   color: rgb(133, 137, 145);
@@ -363,6 +368,7 @@ footer #help {
   font-size: 1.25em;
 }
 .dropdown .dropdown-estilo {
+  border-color: rgba(0, 0, 0, 0);
   font-family: "RopaSans";
   background-color: rgb(20, 33, 61);
   color: rgb(255, 255, 255);
@@ -413,16 +419,11 @@ div.row {
 #formulario-pagina {
   font-family: "RopaSans";
   background-color: rgb(20, 33, 61);
-  padding-left: 50px;
-  padding-top: 50px;
-  padding-right: 50px;
-  padding-bottom: 140px;
+  padding: 15px;
 }
 @media (max-width: 426px) {
   #formulario-pagina {
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
+    padding: 10px;
   }
 }
 #formulario-pagina #programa-texto {
@@ -434,20 +435,19 @@ div.row {
 #formulario-pagina #programa-texto .h1-form {
   color: rgb(13, 110, 253);
   font-size: 1.5em;
-  padding-left: 20px;
+  padding-top: 10px;
   text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 #formulario-pagina #programa-texto .text-form {
   color: rgb(13, 110, 253);
-  padding-left: 20px;
+  margin: 0px;
+  padding: 0px;
   font-size: 1em;
   text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 #formulario-pagina form {
   border-radius: 0px 0px 10px 10px;
-  padding-left: 10px;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding: 12px;
   color: rgb(255, 255, 255);
   font-family: "RopaSans";
   background-color: rgb(12, 12, 12);
@@ -455,16 +455,23 @@ div.row {
 #formulario-pagina form .form-estilo {
   background-color: rgb(12, 12, 12);
   border-radius: 2px;
-  width: 120px;
+  margin-bottom: 10px;
   color: rgb(133, 137, 145);
+  width: 130px;
   /* Firefox */
+}
+@media (max-width: 426px) {
+  #formulario-pagina form .form-estilo {
+    width: 200px;
+  }
 }
 #formulario-pagina form .form-estilo input {
   width: 100px;
   background-color: rgb(12, 12, 12);
   border: 1px solid rgb(255, 255, 255);
   border-radius: 2px;
-  width: 120px;
+  width: 130px;
+  padding: 6px 12px;
 }
 @media (max-width: 426px) {
   #formulario-pagina form .form-estilo input {
@@ -504,7 +511,7 @@ div.row {
   background-color: rgb(12, 12, 12);
   border-radius: 2px;
   color: rgb(133, 137, 145);
-  width: 120px;
+  width: 130px;
   margin-left: 15px;
   margin-top: 20px;
 }
