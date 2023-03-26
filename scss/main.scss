@@ -62,7 +62,7 @@ main{
     padding: 0px;
     margin-top: 80px;
 }
-@media (max-width: 992px){
+@media (max-width: 767px){
     .main-separador{
         margin-top: 105px;
     }
@@ -312,7 +312,7 @@ footer{
 
         .precio{
             font-family: $ropasans;
-            font-size: 1    em;
+            font-size: 1em;
         }   
 }
 
@@ -382,10 +382,24 @@ div.row{
         @include flex-column-start;
         padding: 0px;
 
+        #storage-img{
+            height: 100%;
+            width: 200%;
+            overflow: hidden;
+        }
+
         #parrafo-about-us{
             padding: 50px;
             padding-top: 0px;
             font-size: 1.6em;
+            background-color: $navy-oscuro;
+            margin: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            @media (min-width: 960px){
+            font-size: 2em;
+            }
         }
 
         .titulos-about-us-base{
@@ -394,6 +408,13 @@ div.row{
             font-family: $ropasans;
             color: $naranja;
             font-size: 1.5em;
+            background-color: $navy-oscuro;
+            padding-top: 10px;
+            padding-left: 20px;
+
+            @media (min-width: 960px){
+            font-size: 2em;
+            }
         }
     }
 }

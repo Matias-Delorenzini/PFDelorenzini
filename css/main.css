@@ -117,7 +117,7 @@ main {
   margin-top: 80px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .main-separador {
     margin-top: 105px;
   }
@@ -333,7 +333,7 @@ footer #help {
 }
 .card-body .precio {
   font-family: "RopaSans";
-  font-size: 1 em;
+  font-size: 1em;
 }
 
 #shop-logo {
@@ -401,10 +401,24 @@ div.row {
   justify-content: flex-start;
   padding: 0px;
 }
+.main-about-us .about-storage #storage-img {
+  height: 100%;
+  width: 200%;
+  overflow: hidden;
+}
 .main-about-us .about-storage #parrafo-about-us {
   padding: 50px;
   padding-top: 0px;
   font-size: 1.6em;
+  background-color: rgb(20, 33, 61);
+  margin: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media (min-width: 960px) {
+  .main-about-us .about-storage #parrafo-about-us {
+    font-size: 2em;
+  }
 }
 .main-about-us .about-storage .titulos-about-us-base {
   padding-left: 50px;
@@ -412,6 +426,14 @@ div.row {
   font-family: "RopaSans";
   color: rgb(253, 163, 18);
   font-size: 1.5em;
+  background-color: rgb(20, 33, 61);
+  padding-top: 10px;
+  padding-left: 20px;
+}
+@media (min-width: 960px) {
+  .main-about-us .about-storage .titulos-about-us-base {
+    font-size: 2em;
+  }
 }
 
 /* -------------------------------------------------------------------------------------------------------------------------------------*/
